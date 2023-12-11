@@ -79,6 +79,7 @@ def run_analysis(api_key, xml_file_path):
                 print("No further questions. Exiting the program. Have a great day!")
                 break  # Break out of the loop to exit
                 exit()
+                
             else:
                 print("Invalid input. Please type 'yes' or 'no'.\n")  # Handle invalid input
 
