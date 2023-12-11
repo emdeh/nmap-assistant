@@ -2,6 +2,8 @@ import openai
 from parser_helper import parse_nmap_xml
 
 def query_openai(prompt):
+    # Query the OpenAI API with the prompt and return the response.
+    # This fucntion is called within the run_analysis function below.
     try:
         response = openai.completions.create(
             model="text-davinci-003",
@@ -17,14 +19,15 @@ def query_openai(prompt):
         exit()
 
 def run_analysis(api_key, xml_file_path):
-    # Retrieve the API key from the environment variable
-    openai.api_key = api_key
+    # This is the main function that runs the analysis based on the Nmap XML file.
+    # This function is called from the main function in setup.py.\
 
-    nmap_data = parse_nmap_xml(xml_file_path)
+    openai.api_key = api_key # Set the API key
+
+    nmap_data = parse_nmap_xml(xml_file_path) # Parse the Nmap XML file
     if not nmap_data.strip():
         print("No data was found in the Nmap XML file. Exiting the program.")
         exit()
-
 
     # Define pre-prompt text.
     pre_prompt = "You are a cybersecurity expert providing advice on a penetration test based on nmap data. Provide advice on how to proceed next in the test. In your response, ensure you summarise how many hosts, ports, and services were found. Then proceed to provide your recommendations, categorising them by each host. For example, after providing a summary, you could say: 'For host 1, I recommend...'"
