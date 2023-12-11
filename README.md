@@ -1,4 +1,4 @@
-# Nmap Assistant
+# Nmap Assistant - User Documentation
 <div align="center">
 
 ![Alt text](image-1.png)
@@ -134,6 +134,8 @@ Do you have any other cybersecurity questions? (yes/no):
 no
 No further questions. Exiting the program. Have a great day!
 ```
+# Technical overview
+- [Technical documentation](TECHNICAL-DOCUMENTATION.md)
 
 # Contributing
 Contributions to Nmap Assistant are welcome! Feel free to fork the repository, make your changes, and submit a pull request.

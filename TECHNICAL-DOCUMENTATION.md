@@ -1,4 +1,4 @@
-# Nmap Assistant - Internal Documentation
+# Nmap Assistant - Technical Documentation
 
 This document provides a technical overview of the project, explaining its structure, components, and usage.
 
@@ -87,6 +87,9 @@ python setup.py
 # Testing
 - Test Scripts: Additional test scripts can be created to test individual modules.
 Testing Framework: Python unittest framework is recommended for writing test cases.
+
+# User documentation
+- [User documentation](README.md)
 
 # Contributing
 Contributions should follow the established code structure and styling guidelines. Please ensure that all pull requests are accompanied by corresponding tests.
