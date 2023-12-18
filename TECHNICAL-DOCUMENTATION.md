@@ -19,7 +19,7 @@ nmap-assistant/
 # Diagram
 <p align="center">
 
-![UML Activty Diagram](diagrama.jpg)
+![UML Activty Diagram](diagram.jpg)
 
 </p>
 
