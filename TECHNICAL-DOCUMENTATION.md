@@ -16,6 +16,12 @@ nmap-assistant/
 ├── parser_helper.py       - Module for parsing Nmap XML output.
 └── requirements.txt       - Required Python libraries.
 ```
+# Diagram
+<p align="center">
+
+![UML Activty Diagram](diagram.jpg)
+
+</p>
 
 ## nmap_analysis.py
 
